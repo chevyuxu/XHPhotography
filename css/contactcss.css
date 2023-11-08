@@ -1,0 +1,148 @@
+/* 字體家族 */
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    /* 其他字體屬性，如字體權重、風格等 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.bodyclass {
+    
+    width: 100%; /*要是網頁中最寬的 */
+    margin: 0 auto;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; /* 元素水平居中对齐 */
+    align-items: center; /* 元素垂直居中对齐 */
+    padding-top: 10%;
+}
+
+
+.back {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin:1.2% 2%;
+}
+
+.contacttext h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.contacttext a{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+button[type="submit"] {
+    background-color: #665744; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    padding: 10px 20px; /* 內邊距，控制按鈕大小 */
+    border: none; /* 去除邊框 */
+    border-radius: 5px; /* 圓角 */
+    cursor: pointer; /* 按鈕滑鼠游標 */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #857259; /* 滑鼠懸停時的背景顏色 */
+  }
+
+  /* 上面容器 */
+.headerclass {
+    position: relative;
+    left:0%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 1% 3%;
+}
+
+/* 上面左邊容器 */
+.headerleft {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 上面右邊容器 */
+.headerright {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbigclass {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 上面右邊字體 */
+.headerright a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+/* 游標滑過字變色 */
+.menutext-color-change:hover {
+    color: burlywood;
+}
+
+/* About對話框 */
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.dialog-content {
+    background-color: #fff;
+    width: 70%;
+    max-width: 800px;
+    margin: 15% auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

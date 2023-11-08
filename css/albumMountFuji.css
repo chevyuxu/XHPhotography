@@ -1,0 +1,85 @@
+/* 字體家族 */
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    /* 其他字體屬性，如字體權重、風格等 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.bodyclass {
+    
+    width: 100%; /*要是網頁中最寬的 */
+    margin: 0 auto;
+}
+
+.MountFuji {
+    display: flex;
+    justify-content: center;
+}
+
+.MountFuji h1{
+    color: rgb(255, 255, 255);
+}
+
+
+.waterfall {
+    width: 100%;
+    margin: 0px auto;
+    column-count: 5;
+    /*欄數*/
+    column-gap: 10px;
+    /*每欄間隔*/
+}
+
+.item {
+    background-color: rgb(55, 55, 55);
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0 auto 5px;
+    break-inside: avoid;
+    /*定義頁面、列或是區域發生中斷時的元素表現方式。 auto->元素中斷、acoid->元素不中斷*/
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.waterfall p {
+    color: rgb(200, 200, 200);
+}
+
+/* About對話框 */
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.dialog-content {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    margin: 3% auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}

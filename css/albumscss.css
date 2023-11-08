@@ -1,0 +1,131 @@
+/* 字體家族 */
+@font-face {
+    font-family: 'Noto Sans', sans-serif;
+    /* 其他字體屬性，如字體權重、風格等 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.bodyclass {
+    width: 100%; /*要是網頁中最寬的 */
+    margin: 0 auto;
+}
+
+
+/* 瀑布流 */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    gap: auto;
+    row-gap: 10%;
+    padding: 5% 0% 5% 20%;
+    max-width: 80%;
+    
+}
+
+
+.top {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    margin:1.2% 1%;
+    cursor: pointer;
+}
+
+.albumstext {
+    position: relative;
+    width: fit-content;
+    top: 15%;
+    left: 25%;
+}
+
+.albumstext h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 4em;
+}
+
+
+/* 上面容器 */
+.headerclass {
+    position: relative;
+    left:0%;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 1% 3%;
+}
+
+/* 上面左邊容器 */
+.headerleft {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 上面右邊容器 */
+.headerright {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbigclass {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 上面右邊字體 */
+.headerright a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+/* 游標滑過字變色 */
+.menutext-color-change:hover {
+    color: burlywood;
+}
+
+/* About對話框 */
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.dialog-content {
+    background-color: #fff;
+    width: 70%;
+    max-width: 800px;
+    margin: 15% auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
